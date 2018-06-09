@@ -1,8 +1,53 @@
 [alias]
-	st = status
-	ch = checkout
-	br = branch
+	#alias
+	as = !git config --get-regexp alias
+	#diff
+	d = diff
+	d1 = diff HEAD~
+	d2 = diff HEAD~
+	dc = diff --cached
+	ds = diff --staged
+	#commit
 	ci = commit
-	cia = commit -a
+	cia = commit -amend
+	cimix = commit --amend --no-edit
+	cim = commit -m
+	#push
+	ps = push
+	#pull
+	pl = pull
+	plr = pull --rebase
+	#reset
+	re = reset
+	rehe = reset HEAD
+	reha = reset --hard
+	res = reset --soft
+	#log
+	l = log
+	ls = log --stat
+    lo = log --oneline
+	#show
+	sh = show
+	#stash
+	ss = stash
+	ssap = stash apply
+	sspp = stash pop
+	ssl = stash list
+	sssh = stash show
+	#status　  
+	st = status
+	#checkout
+	ch = checkout
+	chb = checkout -b
+	#branch
+	br = branch
+	#add
 	ad = add
-	
+	ada = add .
+
+	[mergetool "vscode"]
+	cmd = code --wait $MERGED
+	[diff]
+	tool = vscode
+	[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
