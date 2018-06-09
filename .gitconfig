@@ -1,0 +1,8 @@
+[alias]
+	st = status
+	ch = checkout
+	br = branch
+	ci = commit
+	cia = commit -a
+	ad = add
+	
