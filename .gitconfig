@@ -25,7 +25,7 @@
 	#log
 	l = log
 	ls = log --stat
-    lo = log --oneline
+        lo = log --oneline
 	#show
 	sh = show
 	#stash
@@ -50,4 +50,4 @@
 	[diff]
 	tool = vscode
 	[difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+        cmd = code --wait --diff $LOCAL $REMOTE
