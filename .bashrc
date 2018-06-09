@@ -1,3 +1,4 @@
+#お気に入り追加
 function addas(){
     if [ $# -eq 0 ]; then
         echo "addalias: argument is invalid." 1>&2
@@ -17,7 +18,7 @@ function addas(){
         echo ${file[i]} >> ${file_path}
     done
 }
-
+#お気に入り削除
 function rmas(){
     if [ $# -ne 0 ]; then
         echo "rmalias: argument is invalid." 1>&2
